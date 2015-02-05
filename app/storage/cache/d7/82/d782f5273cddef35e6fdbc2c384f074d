@@ -1,0 +1,21 @@
+1423126453s:717:"a:5:{s:5:"mtime";i:1422973911;s:7:"content";s:271:"title = "Sign In"
+url = "/signin"
+layout = "default"
+hidden = "0"
+
+[account]
+paramCode = "code"
+==
+<?php
+function onStart(){
+    $this['users'] = DB::table('users')->select('name', 'email')->get();
+    $this['backurl'] = post('backurl');
+}
+?>
+==
+{% component 'account' %}";s:8:"settings";a:5:{s:5:"title";s:7:"Sign In";s:3:"url";s:7:"/signin";s:6:"layout";s:7:"default";s:6:"hidden";s:1:"0";s:10:"components";a:1:{s:7:"account";a:1:{s:9:"paramCode";s:4:"code";}}}s:4:"code";s:136:"
+function onStart(){
+    $this['users'] = DB::table('users')->select('name', 'email')->get();
+    $this['backurl'] = post('backurl');
+}
+";s:6:"markup";s:25:"{% component 'account' %}";}";

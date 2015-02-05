@@ -1,0 +1,16 @@
+title = "Sign In"
+url = "/signin"
+layout = "default"
+hidden = "0"
+
+[account]
+paramCode = "code"
+==
+<?php
+function onStart(){
+    $this['users'] = DB::table('users')->select('name', 'email')->get();
+    $this['backurl'] = post('backurl');
+}
+?>
+==
+{% component 'account' %}

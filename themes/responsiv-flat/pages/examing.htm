@@ -1,0 +1,101 @@
+title = "Экзамен"
+url = "/examing"
+layout = "default"
+hidden = "0"
+
+[session]
+    security = "user"
+    redirect = "signin"
+==
+<?php
+function onStart(){
+    //Запилить выброс ошибок, если нет данных
+    //Flash::success('dsadasd');
+    $this['result'] = Question::get_all((int) post('category'), (int) post('advance'));
+}
+function onCheckAnswer(){
+    return Question::check_answer(
+        (int) post('question_id'),
+        (int) post('item')
+    );
+}
+?>
+==
+{% set
+    inc = [1,2,3,4,5,6,7,8,9,10]
+%}
+<div id="question">
+{% partial 'question' result=result %}
+</div>
+<footer id="layout-footer">
+    <div class="container" style="padding: 0;">
+        <div class="row">
+        <div class="col-xs-3 copy">
+            ОАО "ТелеРадиоМедиаШмедиа"&nbsp;&copy;&nbsp;<script type="text/javascript">document.write(new Date().getFullYear());</script>
+        </div>
+        <div class="col-xs-6 exam-nav">
+            <!-- <i>Навигация по вопросам экзаминационного билета</i> -->
+            <div id="exam-nav" class="btn-group">
+                {% for i in inc %}
+                    <a class="btn btn-inverse{%if i == 1%} active{%endif%}" href="#" data-item="{{i}}">{{i}}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="exam-progress" class="col-xs-3">
+            <div class="countdown pull-left"><b class="fui-time"></b><span>30</span> мин.</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    var question = $('#question'),
+        examnav = $('#exam-nav'),
+        examprogress = $('#exam-progress');
+
+    examnav.on('click', 'a', function(){
+        var that = $(this);
+        that.addClass('active').siblings('.active').removeClass('active');
+        question.children('#question-' + $(this).data('item')).show().siblings().hide();
+        return false;
+    });
+
+    question
+        .on('click', 'li', function(){
+            var that = $(this);
+            if(that.hasClass('clicked')) return;
+            $.request('onCheckAnswer', {
+                data: {
+                    item: that.data('item'),
+                    question_id: that.parent().data('id')
+                },
+                success: function(data){
+                    that.addClass((data['iscorrect'] ? 'correct' : 'incorrect') + ' clicked').siblings().addClass('clicked');
+                    examnav.children('.active').removeClass('btn-inverse').addClass(data['iscorrect'] ? 'btn-success' : 'btn-danger')
+                }
+            });
+        });
+        var countdownTarget = examprogress.children('.countdown').children('span');
+        var countdown = 30;
+        //убивать интервал по айдишнику, когда экзамен завершен
+        var interval = setInterval(function(){
+            if(countdown){
+                countdownTarget.text(--countdown);
+                switch(countdown){
+                    case 20:
+                        examprogress.find('.progress-bar').addClass('progress-bar-warning').removeClass('progress-bar-success');
+                        break;
+                    case 10:
+                        examprogress.find('.progress-bar').addClass('progress-bar-danger').removeClass('progress-bar-warning');
+                        break;
+                }
+                examprogress.find('.progress-bar').width((30 - countdown) * 100 / 30 + '%');
+            }else{
+                clearInterval(interval);
+                alert('time\'s over');
+            }
+        }, 1000);
+</script>

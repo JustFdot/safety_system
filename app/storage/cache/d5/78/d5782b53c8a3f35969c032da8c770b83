@@ -1,0 +1,88 @@
+1423126457s:4561:"a:5:{s:5:"mtime";i:1423079446;s:7:"content";s:2197:"title = "Экзамен"
+url = "/section/:mode"
+layout = "default"
+hidden = "0"
+==
+<div class="signin-container" style="background-color: #2C3E50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="signin">
+                    <div class="signin-screen">
+                        <div class="signin-icon">
+                            <img src="{{ 'assets/images/icons/svg/pencils.svg'|theme }}" alt="Welcome" />
+                        </div>
+                        <div class="signin-form">
+                        {{form_open({ url: this.param['mode'] })}}
+                            <div class="form-group">
+                                <select name="category" class="select select-block" data-placeholder="Выберите категорию вопросов">
+                                    <option></option>
+                                    <option value="1">Группа раз</option>
+                                    <option value="2">Группа два</option>
+                                </select>
+                            </div>
+                            {% if this.param['mode'] == 'examing' %}
+                            <div class="form-group">
+                                <select name="advance" class="select select-block" data-placeholder="Выберите группу по электробезопасности">
+                                    <option></option>
+                                    <option value="3">Группа 3</option>
+                                    <option value="4">Группа 4</option>
+                                </select>
+                            </div>
+                            {% endif %}
+                            <button type="submit" class="btn btn-inverse btn-lg btn-block">Продолжить</button>
+                        {{form_close()}}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('select').select2({
+        allowClear: true
+    });
+</script>";s:8:"settings";a:5:{s:5:"title";s:14:"Экзамен";s:3:"url";s:14:"/section/:mode";s:6:"layout";s:7:"default";s:6:"hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2114:"<div class="signin-container" style="background-color: #2C3E50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="signin">
+                    <div class="signin-screen">
+                        <div class="signin-icon">
+                            <img src="{{ 'assets/images/icons/svg/pencils.svg'|theme }}" alt="Welcome" />
+                        </div>
+                        <div class="signin-form">
+                        {{form_open({ url: this.param['mode'] })}}
+                            <div class="form-group">
+                                <select name="category" class="select select-block" data-placeholder="Выберите категорию вопросов">
+                                    <option></option>
+                                    <option value="1">Группа раз</option>
+                                    <option value="2">Группа два</option>
+                                </select>
+                            </div>
+                            {% if this.param['mode'] == 'examing' %}
+                            <div class="form-group">
+                                <select name="advance" class="select select-block" data-placeholder="Выберите группу по электробезопасности">
+                                    <option></option>
+                                    <option value="3">Группа 3</option>
+                                    <option value="4">Группа 4</option>
+                                </select>
+                            </div>
+                            {% endif %}
+                            <button type="submit" class="btn btn-inverse btn-lg btn-block">Продолжить</button>
+                        {{form_close()}}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('select').select2({
+        allowClear: true
+    });
+</script>";}";

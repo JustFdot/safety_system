@@ -1,0 +1,144 @@
+1423126455s:4655:"a:5:{s:5:"mtime";i:1421774579;s:7:"content";s:2250:"title = "Questions"
+url = "/questions"
+layout = "default"
+hidden = "0"
+==
+<?php
+function onStart(){
+    $ids = Question::get_ids();
+    shuffle($ids);
+    $this['result'] = $this->onGetNext(array_shift($ids));
+    $this['ids'] = $ids;
+}
+function onGetNext($id = null){
+    $id = $id ? $id : post($id);
+    return $this['result'] = Question::get_one($id);
+}
+function onCheckAnswer(){
+    return Question::check_answer(
+        (int) post('question_id'),
+        (int) post('item')
+    );
+}
+?>
+==
+<div id="question">
+{% partial 'question' result=result %}
+</div>
+<div class="container" style="padding: 20px 0">
+    <button id="get-next" class="btn btn-primary">Запросить следующий вопрос</button>
+</div>
+
+<script type="text/javascript">
+    var ids = [];
+    {%for i in ids%}
+        ids.push({{i}});
+    {%endfor%}
+
+    $('#get-next').on('click', function(){
+        var that = $(this);
+        $.request('onGetNext', {
+            data: {id: ids.shift()},
+            beforeUpdate: function(){
+                that.addClass('disabled');
+            },
+            update: {question: '#question'},
+            success: function(data){
+                $('#question').html(data['question']);
+                that.removeClass('disabled');
+                if(!ids.length){
+                    that
+                    .text('Вопросы закончились. Перемешать и начать сначала?')
+                    .off()
+                    .on('click', function(){
+                        window.location.reload();
+                    });
+                }
+            }
+        });
+    });
+
+    $('#question')
+        .on('click', 'li', function(){
+            var that = $(this);
+            if(that.hasClass('clicked')) return;
+            $.request('onCheckAnswer', {
+                data: {
+                    item: that.data('item'),
+                    question_id: that.parent().data('id')
+                },
+                success: function(data){
+                    that
+                    .addClass((data['iscorrect'] ? 'correct' : 'incorrect') + ' clicked');
+                }
+            });
+        });
+</script>";s:8:"settings";a:5:{s:5:"title";s:9:"Questions";s:3:"url";s:10:"/questions";s:6:"layout";s:7:"default";s:6:"hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";s:427:"
+function onStart(){
+    $ids = Question::get_ids();
+    shuffle($ids);
+    $this['result'] = $this->onGetNext(array_shift($ids));
+    $this['ids'] = $ids;
+}
+function onGetNext($id = null){
+    $id = $id ? $id : post($id);
+    return $this['result'] = Question::get_one($id);
+}
+function onCheckAnswer(){
+    return Question::check_answer(
+        (int) post('question_id'),
+        (int) post('item')
+    );
+}
+";s:6:"markup";s:1731:"<div id="question">
+{% partial 'question' result=result %}
+</div>
+<div class="container" style="padding: 20px 0">
+    <button id="get-next" class="btn btn-primary">Запросить следующий вопрос</button>
+</div>
+
+<script type="text/javascript">
+    var ids = [];
+    {%for i in ids%}
+        ids.push({{i}});
+    {%endfor%}
+
+    $('#get-next').on('click', function(){
+        var that = $(this);
+        $.request('onGetNext', {
+            data: {id: ids.shift()},
+            beforeUpdate: function(){
+                that.addClass('disabled');
+            },
+            update: {question: '#question'},
+            success: function(data){
+                $('#question').html(data['question']);
+                that.removeClass('disabled');
+                if(!ids.length){
+                    that
+                    .text('Вопросы закончились. Перемешать и начать сначала?')
+                    .off()
+                    .on('click', function(){
+                        window.location.reload();
+                    });
+                }
+            }
+        });
+    });
+
+    $('#question')
+        .on('click', 'li', function(){
+            var that = $(this);
+            if(that.hasClass('clicked')) return;
+            $.request('onCheckAnswer', {
+                data: {
+                    item: that.data('item'),
+                    question_id: that.parent().data('id')
+                },
+                success: function(data){
+                    that
+                    .addClass((data['iscorrect'] ? 'correct' : 'incorrect') + ' clicked');
+                }
+            });
+        });
+</script>";}";

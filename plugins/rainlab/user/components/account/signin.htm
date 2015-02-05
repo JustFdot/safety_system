@@ -1,0 +1,70 @@
+<div class="signin-container">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="signin">
+                    <div class="signin-screen">
+                        <div class="signin-icon">
+                            <img src="{{ 'assets/images/icons/svg/clipboard.svg'|theme }}" alt="Welcome" />
+                        </div>
+
+                        <div class="signin-form">
+                            <!-- <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control signin-field"
+                                    value=""
+                                    placeholder="Enter your email"
+                                    id="signin-email" />
+                                <label class="signin-field-icon fui-mail" for="signin-email"></label>
+                            </div>
+
+                            <div class="form-group">
+                                <input
+                                    type="password"
+                                    class="form-control signin-field"
+                                    value=""
+                                    placeholder="Password"
+                                    id="signin-pass" />
+                                <label class="signin-field-icon fui-lock" for="signin-pass"></label>
+                            </div> -->
+
+                            <form
+                                data-request="onSignin"
+                                data-request-redirect="{{backurl}}">
+                                <div class="form-group">
+
+                                    <label class="signin-field-icon" for="userSigninEmail"></label>
+                                    <select name="email" id="userSigninEmail" class="select select-primary select-block mbl">
+                                    <option></option>
+                                    {% for user in users %}
+                                        <option value={{user.email}}>{{user.name}}</option>
+                                    {% endfor %}
+                                    </select>
+                                    <!-- <input name="email" type="email" class="form-control" id="userSigninEmail" placeholder="Enter your email"> -->
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="signin-field-icon fui-lock" for="userSigninPassword"></label>
+                                    <input name="password" type="password" class="form-control" id="userSigninPassword" placeholder="Enter your password">
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Войти в систему</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#userSigninEmail").select2({
+        placeholder: 'Пожалуйста, представьтесь',
+        allowClear: true
+    });
+</script>

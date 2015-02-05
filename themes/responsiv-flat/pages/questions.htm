@@ -1,0 +1,76 @@
+title = "Questions"
+url = "/questions"
+layout = "default"
+hidden = "0"
+==
+<?php
+function onStart(){
+    $ids = Question::get_ids();
+    shuffle($ids);
+    $this['result'] = $this->onGetNext(array_shift($ids));
+    $this['ids'] = $ids;
+}
+function onGetNext($id = null){
+    $id = $id ? $id : post($id);
+    return $this['result'] = Question::get_one($id);
+}
+function onCheckAnswer(){
+    return Question::check_answer(
+        (int) post('question_id'),
+        (int) post('item')
+    );
+}
+?>
+==
+<div id="question">
+{% partial 'question' result=result %}
+</div>
+<div class="container" style="padding: 20px 0">
+    <button id="get-next" class="btn btn-primary">Запросить следующий вопрос</button>
+</div>
+
+<script type="text/javascript">
+    var ids = [];
+    {%for i in ids%}
+        ids.push({{i}});
+    {%endfor%}
+
+    $('#get-next').on('click', function(){
+        var that = $(this);
+        $.request('onGetNext', {
+            data: {id: ids.shift()},
+            beforeUpdate: function(){
+                that.addClass('disabled');
+            },
+            update: {question: '#question'},
+            success: function(data){
+                $('#question').html(data['question']);
+                that.removeClass('disabled');
+                if(!ids.length){
+                    that
+                    .text('Вопросы закончились. Перемешать и начать сначала?')
+                    .off()
+                    .on('click', function(){
+                        window.location.reload();
+                    });
+                }
+            }
+        });
+    });
+
+    $('#question')
+        .on('click', 'li', function(){
+            var that = $(this);
+            if(that.hasClass('clicked')) return;
+            $.request('onCheckAnswer', {
+                data: {
+                    item: that.data('item'),
+                    question_id: that.parent().data('id')
+                },
+                success: function(data){
+                    that
+                    .addClass((data['iscorrect'] ? 'correct' : 'incorrect') + ' clicked');
+                }
+            });
+        });
+</script>
