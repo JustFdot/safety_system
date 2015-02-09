@@ -14,10 +14,7 @@ function onStart(){
     $this['result'] = Question::get_all((int) post('category'), (int) post('advance'));
 }
 function onCheckAnswer(){
-    return Question::check_answer(
-        (int) post('question_id'),
-        (int) post('item')
-    );
+    return Question::check_answer((int) post('id'));
 }
 ?>
 ==
@@ -69,8 +66,7 @@ function onCheckAnswer(){
             if(that.hasClass('clicked')) return;
             $.request('onCheckAnswer', {
                 data: {
-                    item: that.data('item'),
-                    question_id: that.parent().data('id')
+                    id: that.data('id')
                 },
                 success: function(data){
                     that.addClass((data['iscorrect'] ? 'correct' : 'incorrect') + ' clicked').siblings().addClass('clicked');
@@ -97,5 +93,5 @@ function onCheckAnswer(){
                 clearInterval(interval);
                 alert('time\'s over');
             }
-        }, 1000);
+        }, 10000);
 </script>

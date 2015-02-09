@@ -13,8 +13,9 @@
     </section>
     <p class="container callout callout-info">{{question.text}}</p>
     <ul class="question-list list-unstyled" data-id="{{question.id}}">
+    {% shuffle(question.answers) %}
     {%for answer in question.answers%}
-        <li data-item="{{answer.item}}">
+        <li data-id="{{answer.id}}" data-item="{{answer.item}}">
             <div class="container"><span class="fui-radio-unchecked"></span>{{answer.text}}</div>
         </li>
     {%endfor%}

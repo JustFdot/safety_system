@@ -9,6 +9,6 @@ App::before(function ($request) {
      * handled by the back-end modules.
      */
 
-    //Route::any('questions', 'Questions@index');
+    Route::any('questions', 'Questions@index');
     Route::any('{slug}', 'Cms\Classes\Controller@run')->where('slug', '(.*)?');
 });

@@ -5,7 +5,7 @@ hidden = "0"
 ==
 <?php
 function onStart(){
- /*   $this->question = new Question;
+/*   $this->question = new Question;
     $this->question->ids = $this->question->get_ids();
     shuffle($this->question->ids);
     $this->question->category = (int) post('category');
@@ -14,7 +14,6 @@ function onStart(){
     $this->onGetNext();
 */
 
-    $this->question->ids
     $ids = Question::get_ids();
     shuffle($ids);
     $this['category'] = (int) post('category');
@@ -32,10 +31,7 @@ function onGetNext($id = null, $category = null){
     return $this['result'] = Question::get_one($id, $category);
 }
 function onCheckAnswer(){
-    return Question::check_answer(
-        (int) post('question_id'),
-        (int) post('item')
-    );
+    return Question::check_answer((int) post('id'));
 }
 ?>
 ==
@@ -66,7 +62,7 @@ function onCheckAnswer(){
     </div>
 </footer>
 <script type="text/javascript">
-    var ids = ['{{ids}}'];
+    var ids = [{{ids}}];
 
     $('#get-next').on('click', function(e){
         e.preventDefault();
@@ -99,8 +95,7 @@ function onCheckAnswer(){
             if(that.hasClass('clicked')) return;
             $.request('onCheckAnswer', {
                 data: {
-                    item: that.data('item'),
-                    question_id: that.parent().data('id')
+                    id: that.data('id')
                 },
                 success: function(data){
                     that

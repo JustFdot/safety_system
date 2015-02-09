@@ -39,9 +39,9 @@ class Question extends Model{
         return DB::table('questions')->lists('id');
     }
 
-    public static function check_answer($qid, $item){
-        $query = DB::table('questions')->select('correct')->where('id', $qid)->first();
-        return ['iscorrect' => (int) $query->correct === $item];
+    public static function check_answer($id){
+        $query = DB::table('answers')->select('iscorrect')->where('id', $id)->first();
+        return ['iscorrect' => (bool) $query->iscorrect];
     }
 
 }
