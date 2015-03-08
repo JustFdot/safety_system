@@ -625,7 +625,7 @@ ul.question-list li span{
 ul.question-list li span:before{
   content: "\e02b";
 }
-ul.question-list li:hover{
+ul.question-list li:hover, ul.question-list li.checked{
   background: #edeff1;
   border-color: rgba(255, 255, 255, 0.3) transparent rgba(52, 73, 94, 0.1);
 }
@@ -640,6 +640,9 @@ ul.question-list li.clicked{
 }
 ul.question-list li.clicked span:before{
   content: "\e02b";
+}
+ul.question-list li.checked span:before{
+  content: "\e032";
 }
 ul.question-list li.correct{
   color: #34495e;
@@ -12849,7 +12852,7 @@ header#layout-header nav .needauth span{
 #question > div {
   display: none;
 }
-#question > div:first-child {
+#question > div.current {
   display: block;
 }
 .train-nav{
@@ -13296,4 +13299,21 @@ header#layout-header nav .needauth span{
 }
 .callout-success h4 {
   color: #2ecc71;
+}
+
+/* popup animations */
+
+@-webkit-keyframes popUp {
+    70% { -webkit-transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; }
+    100% { -webkit-transform: scale(1); opacity: 1; }
+}
+
+@-moz-keyframes popUp {
+    70% { -moz-transform: scale(1.1); opacity: .8; -moz-animation-timing-function: ease-out; }
+    100% { -moz-transform: scale(1); opacity: 1; }
+}
+
+@keyframes popUp {
+    70% { transform: scale(1.1); opacity: .8; animation-timing-function: ease-out; }
+    100% { transform: scale(1); opacity: 1; }
 }

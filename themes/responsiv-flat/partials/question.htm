@@ -1,24 +1,34 @@
-{%for question in result%}
-<div id="question-{{question.id}}">
-    <section class="layout-title">
-        <div class="container">
-            {% if this.page.id == 'training' %}
-                <button id="info" class="btn btn-info pull-right">Справочный материал по вопросу</button>
-                <div class="info share pull-right">Оставлю здесь какое-нибудь справочное пособие.<br />Может две строчки<br />А может даже и три, ктож меня знает..</div>
-            {% endif %}
-            <div class="title">
-                Билет {{question.group}} <span class="fui-arrow-right"></span> Вопрос {{question.item}}
+{% for question in result %}
+    <div id="question-{{question.id}}"{{ loop.first ? ' class="current"' }}>
+        <section class="layout-title">
+            <div class="container">
+                {% if this.page.id == 'training' %}
+                    <button id="info" class="btn btn-info pull-right">Справочный материал по вопросу</button>
+                    <div class="info share pull-right">Оставлю здесь какое-нибудь справочное пособие.<br />Может две строчки<br />А может даже и три, ктож меня знает..</div>
+                {% endif %}
+                <div class="title">
+                    Билет {{question.group}} <span class="fui-arrow-right"></span> Вопрос {{question.item}}
+                </div>
             </div>
-        </div>
-    </section>
-    <p class="container callout callout-info">{{question.text}}</p>
-    <ul class="question-list list-unstyled" data-id="{{question.id}}">
-    {% shuffle(question.answers) %}
-    {%for answer in question.answers%}
-        <li data-id="{{answer.id}}" data-item="{{answer.item}}">
-            <div class="container"><span class="fui-radio-unchecked"></span>{{answer.text}}</div>
-        </li>
-    {%endfor%}
-    </ul>
-</div>
-{%endfor%}
+        </section>
+        <p class="container callout callout-info">{{question.text}}</p>
+        <ul class="question-list list-unstyled" data-id="{{question.id}}">
+        {# shuffle(question.answers) #}
+        {% for answer in question.answers %}
+            <li data-id="{{answer.id}}" data-item="{{answer.item}}">
+                <div class="container"><span class="fui-radio-unchecked"></span>{{answer.text}}</div>
+            </li>
+        {% else %}
+            <div class="container callout callout-danger">
+                <b>Это удивительно!</b><br />
+                Мы не смогли найти ни одного варианта ответа на текущий вопрос. Пожалуйста, попробуйте еще раз...
+            </div>
+        {% endfor %}
+        </ul>
+    </div>
+{% else %}
+    <p class="container callout callout-danger" style="margin: 50px auto;">
+        <b>Это удивительно!</b><br />
+        Мы не смогли найти ни одного вопроса при текущих параметрах. Пожалуйста, попробуйте еще раз...
+    </p>
+{% endfor %}

@@ -28,10 +28,9 @@ class __TwigTemplate_5c88354c1f3b32a0055f6f466180b42ccef5b2385b0c36779c80e62181d
         echo $this->env->getExtension('CMS')->themeFilter("assets/images/icons/svg/pencils.svg");
         echo "\" alt=\"Welcome\" />
                         </div>
-
                         <div class=\"signin-form\">
                         ";
-        // line 12
+        // line 11
         echo call_user_func_array($this->env->getFunction('form_open')->getCallable(), array("open", array("url" => $this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "param", array()), "mode", array(), "array"))));
         echo "
                             <div class=\"form-group\">
@@ -42,9 +41,9 @@ class __TwigTemplate_5c88354c1f3b32a0055f6f466180b42ccef5b2385b0c36779c80e62181d
                                 </select>
                             </div>
                             ";
-        // line 20
+        // line 19
         if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "param", array()), "mode", array(), "array") == "examing")) {
-            // line 21
+            // line 20
             echo "                            <div class=\"form-group\">
                                 <select name=\"advance\" class=\"select select-block\" data-placeholder=\"Выберите группу по электробезопасности\">
                                     <option></option>
@@ -54,13 +53,12 @@ class __TwigTemplate_5c88354c1f3b32a0055f6f466180b42ccef5b2385b0c36779c80e62181d
                             </div>
                             ";
         }
-        // line 29
+        // line 28
         echo "                            <button type=\"submit\" class=\"btn btn-inverse btn-lg btn-block\">Продолжить</button>
                         ";
-        // line 30
+        // line 29
         echo call_user_func_array($this->env->getFunction('form_close')->getCallable(), array("close"));
         echo "
-
                         </div>
                     </div>
                 </div>
@@ -88,6 +86,6 @@ class __TwigTemplate_5c88354c1f3b32a0055f6f466180b42ccef5b2385b0c36779c80e62181d
 
     public function getDebugInfo()
     {
-        return array (  61 => 30,  58 => 29,  48 => 21,  46 => 20,  35 => 12,  28 => 8,  19 => 1,);
+        return array (  60 => 29,  57 => 28,  47 => 20,  45 => 19,  34 => 11,  28 => 8,  19 => 1,);
     }
 }

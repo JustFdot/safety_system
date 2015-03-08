@@ -18,62 +18,72 @@ function onCheckAnswer(){
 }
 ?>
 ==
-{% set
-    inc = [1,2,3,4,5,6,7,8,9,10]
-%}
 <div id="question">
-{% partial 'question' result=result %}
+{% partial 'question' %}
 </div>
 <footer id="layout-footer">
     <div class="container" style="padding: 0;">
         <div class="row">
-        <div class="col-xs-3 copy">
+        <!-- <div class="col-xs-3 copy">
             ОАО "ТелеРадиоМедиаШмедиа"&nbsp;&copy;&nbsp;<script type="text/javascript">document.write(new Date().getFullYear());</script>
-        </div>
-        <div class="col-xs-6 exam-nav">
-            <!-- <i>Навигация по вопросам экзаминационного билета</i> -->
-            <div id="exam-nav" class="btn-group">
-                {% for i in inc %}
-                    <a class="btn btn-inverse{%if i == 1%} active{%endif%}" href="#" data-item="{{i}}">{{i}}</a>
-                {% endfor %}
-            </div>
-        </div>
+        </div> -->
         <div id="exam-progress" class="col-xs-3">
             <div class="countdown pull-left"><b class="fui-time"></b><span>30</span> мин.</div>
             <div class="progress">
                 <div class="progress-bar progress-bar-success"></div>
             </div>
         </div>
+        <div class="col-xs-6 exam-nav">
+            <div id="exam-nav" class="btn-group">
+                {% for i in 1..10 %}
+                    <a class="btn btn-inverse{{ loop.first ? ' active'}}" href="#" data-item="{{i}}">{{i}}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <button id="question-accept" class="btn btn-success" disabled="disabled">Подтвердить ответ</button>
+        </div>
         </div>
     </div>
 </footer>
-
 <script type="text/javascript">
     var question = $('#question'),
         examnav = $('#exam-nav'),
-        examprogress = $('#exam-progress');
+        examprogress = $('#exam-progress'),
+        accept = $('#question-accept');
 
     examnav.on('click', 'a', function(){
-        var that = $(this);
-        that.addClass('active').siblings('.active').removeClass('active');
-        question.children('#question-' + $(this).data('item')).show().siblings().hide();
+        var curr = question.children('#question-' + $(this).data('item'));
+
+        $(this).addClass('active').siblings('.active').removeClass('active');
+        curr.addClass('current').siblings().removeClass('current');
+        accept.prop(
+            'disabled',
+            !(curr.find('.checked').length && !curr.find('.checked').hasClass('clicked'))
+        );
         return false;
     });
 
+    accept.on('click', function(){
+        var answer = question.children('.current').find('.checked');
+        $.request('onCheckAnswer', {
+            data: {
+                id: answer.data('id')
+            },
+            success: function(data){
+                answer.addClass((data['iscorrect'] ? 'correct' : 'incorrect') + ' clicked').siblings().addClass('clicked');
+                examnav.children('.active').removeClass('btn-inverse').addClass(data['iscorrect'] ? 'btn-success' : 'btn-danger')
+            }
+        });
+    });
     question
         .on('click', 'li', function(){
             var that = $(this);
             if(that.hasClass('clicked')) return;
-            $.request('onCheckAnswer', {
-                data: {
-                    id: that.data('id')
-                },
-                success: function(data){
-                    that.addClass((data['iscorrect'] ? 'correct' : 'incorrect') + ' clicked').siblings().addClass('clicked');
-                    examnav.children('.active').removeClass('btn-inverse').addClass(data['iscorrect'] ? 'btn-success' : 'btn-danger')
-                }
-            });
+            that.addClass('checked').siblings().removeClass('checked');
+            accept.prop('disabled', false);
         });
+
         var countdownTarget = examprogress.children('.countdown').children('span');
         var countdown = 30;
         //убивать интервал по айдишнику, когда экзамен завершен

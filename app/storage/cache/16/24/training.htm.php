@@ -1,8 +1,8 @@
 <?php 
-class Cms54d1ea870a9b1_552378200Class extends \Cms\Classes\PageCode
+class Cms54e109b899ff8_2196209204Class extends \Cms\Classes\PageCode
 {
 public function onStart(){
- /*   $this->question = new Question;
+/*   $this->question = new Question;
     $this->question->ids = $this->question->get_ids();
     shuffle($this->question->ids);
     $this->question->category = (int) post('category');
@@ -28,10 +28,7 @@ public function onGetNext($id = null, $category = null){
     return $this['result'] = Question::get_one($id, $category);
 }
 public function onCheckAnswer(){
-    return Question::check_answer(
-        (int) post('question_id'),
-        (int) post('item')
-    );
+    return Question::check_answer((int) post('id'));
 }
 
 }

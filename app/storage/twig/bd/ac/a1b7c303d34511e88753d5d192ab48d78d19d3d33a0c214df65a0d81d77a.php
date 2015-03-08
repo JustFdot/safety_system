@@ -49,10 +49,10 @@ class __TwigTemplate_bdaca1b7c303d34511e88753d5d192ab48d78d19d3d33a0c214df65a0d8
     </div>
 </footer>
 <script type=\"text/javascript\">
-    var ids = ['";
+    var ids = [";
         // line 28
         echo twig_escape_filter($this->env, (isset($context["ids"]) ? $context["ids"] : null), "html", null, true);
-        echo "'];
+        echo "];
 
     \$('#get-next').on('click', function(e){
         e.preventDefault();
@@ -88,8 +88,7 @@ class __TwigTemplate_bdaca1b7c303d34511e88753d5d192ab48d78d19d3d33a0c214df65a0d8
             if(that.hasClass('clicked')) return;
             \$.request('onCheckAnswer', {
                 data: {
-                    item: that.data('item'),
-                    question_id: that.parent().data('id')
+                    id: that.data('id')
                 },
                 success: function(data){
                     that
@@ -104,7 +103,8 @@ class __TwigTemplate_bdaca1b7c303d34511e88753d5d192ab48d78d19d3d33a0c214df65a0d8
             }else{
                 that.addClass('active').nextAll('.info').slideDown('fast');
             }
-        });
+        })
+        .children().first().addClass('current');
 </script>";
     }
 

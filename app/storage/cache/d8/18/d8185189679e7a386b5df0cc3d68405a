@@ -1,11 +1,11 @@
-1423126456s:8274:"a:5:{s:5:"mtime";i:1423079348;s:7:"content";s:4059:"title = "Тренировка"
+1425808910s:8080:"a:5:{s:5:"mtime";i:1424034231;s:7:"content";s:3963:"title = "Тренировка"
 url = "/training"
 layout = "default"
 hidden = "0"
 ==
 <?php
 function onStart(){
- /*   $this->question = new Question;
+/*   $this->question = new Question;
     $this->question->ids = $this->question->get_ids();
     shuffle($this->question->ids);
     $this->question->category = (int) post('category');
@@ -14,7 +14,6 @@ function onStart(){
     $this->onGetNext();
 */
 
-    $this->question->ids
     $ids = Question::get_ids();
     shuffle($ids);
     $this['category'] = (int) post('category');
@@ -32,10 +31,7 @@ function onGetNext($id = null, $category = null){
     return $this['result'] = Question::get_one($id, $category);
 }
 function onCheckAnswer(){
-    return Question::check_answer(
-        (int) post('question_id'),
-        (int) post('item')
-    );
+    return Question::check_answer((int) post('id'));
 }
 ?>
 ==
@@ -66,7 +62,7 @@ function onCheckAnswer(){
     </div>
 </footer>
 <script type="text/javascript">
-    var ids = ['{{ids}}'];
+    var ids = [{{ids}}];
 
     $('#get-next').on('click', function(e){
         e.preventDefault();
@@ -99,8 +95,7 @@ function onCheckAnswer(){
             if(that.hasClass('clicked')) return;
             $.request('onCheckAnswer', {
                 data: {
-                    item: that.data('item'),
-                    question_id: that.parent().data('id')
+                    id: that.data('id')
                 },
                 success: function(data){
                     that
@@ -115,10 +110,12 @@ function onCheckAnswer(){
             }else{
                 that.addClass('active').nextAll('.info').slideDown('fast');
             }
-        });
-</script>";s:8:"settings";a:5:{s:5:"title";s:20:"Тренировка";s:3:"url";s:9:"/training";s:6:"layout";s:7:"default";s:6:"hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";s:1110:"
+        })
+        .children().first().addClass('current');
+</script>
+";s:8:"settings";a:5:{s:5:"title";s:20:"Тренировка";s:3:"url";s:9:"/training";s:6:"layout";s:7:"default";s:6:"hidden";s:1:"0";s:10:"components";a:0:{}}s:4:"code";s:1029:"
 function onStart(){
- /*   $this->question = new Question;
+/*   $this->question = new Question;
     $this->question->ids = $this->question->get_ids();
     shuffle($this->question->ids);
     $this->question->category = (int) post('category');
@@ -127,7 +124,6 @@ function onStart(){
     $this->onGetNext();
 */
 
-    $this->question->ids
     $ids = Question::get_ids();
     shuffle($ids);
     $this['category'] = (int) post('category');
@@ -145,12 +141,9 @@ function onGetNext($id = null, $category = null){
     return $this['result'] = Question::get_one($id, $category);
 }
 function onCheckAnswer(){
-    return Question::check_answer(
-        (int) post('question_id'),
-        (int) post('item')
-    );
+    return Question::check_answer((int) post('id'));
 }
-";s:6:"markup";s:2847:"<div id="question">
+";s:6:"markup";s:2830:"<div id="question">
 {% partial 'question' result=result %}
 </div>
 <footer id="layout-footer">
@@ -177,7 +170,7 @@ function onCheckAnswer(){
     </div>
 </footer>
 <script type="text/javascript">
-    var ids = ['{{ids}}'];
+    var ids = [{{ids}}];
 
     $('#get-next').on('click', function(e){
         e.preventDefault();
@@ -210,8 +203,7 @@ function onCheckAnswer(){
             if(that.hasClass('clicked')) return;
             $.request('onCheckAnswer', {
                 data: {
-                    item: that.data('item'),
-                    question_id: that.parent().data('id')
+                    id: that.data('id')
                 },
                 success: function(data){
                     that
@@ -226,5 +218,6 @@ function onCheckAnswer(){
             }else{
                 that.addClass('active').nextAll('.info').slideDown('fast');
             }
-        });
+        })
+        .children().first().addClass('current');
 </script>";}";

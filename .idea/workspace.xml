@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c81bdd03-8152-4628-b555-116fbc74434d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/sessions/12e75a89caa99b476ae6e0b245df5a99545d04a8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/storage/sessions/93ba80b343bb1bd87bdf2b8ccf478dfba63b377e" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/03/10/0310f5f02997a7beb239431e86df4ea4" afterPath="$PROJECT_DIR$/app/storage/cache/03/10/0310f5f02997a7beb239431e86df4ea4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/0a/63/0a635566cfaf4e38799acaf5e9b03abc" afterPath="$PROJECT_DIR$/app/storage/cache/0a/63/0a635566cfaf4e38799acaf5e9b03abc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/0a/bf/0abffee5e40573442cc4275ca7bf9b5f" afterPath="$PROJECT_DIR$/app/storage/cache/0a/bf/0abffee5e40573442cc4275ca7bf9b5f" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/0c/4f/0c4ff4a7766ea4806dc3be270c0ddfe2" afterPath="$PROJECT_DIR$/app/storage/cache/0c/4f/0c4ff4a7766ea4806dc3be270c0ddfe2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/0f/fa/0ffa4f5537264360ec984bfd0a95854e" afterPath="$PROJECT_DIR$/app/storage/cache/0f/fa/0ffa4f5537264360ec984bfd0a95854e" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/1a/35/1a3565c4ad91f449b79a29ea5b60a58b" afterPath="$PROJECT_DIR$/app/storage/cache/1a/35/1a3565c4ad91f449b79a29ea5b60a58b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/1f/d8/1fd8a945d47c42217fe1963a541f8dcb" afterPath="$PROJECT_DIR$/app/storage/cache/1f/d8/1fd8a945d47c42217fe1963a541f8dcb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/22/ee/22ee1a8aee47e8274abe4d3da70bace0" afterPath="$PROJECT_DIR$/app/storage/cache/22/ee/22ee1a8aee47e8274abe4d3da70bace0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/2a/90/2a90f39e6ec6194962fb7b01e7d0bea4" afterPath="$PROJECT_DIR$/app/storage/cache/2a/90/2a90f39e6ec6194962fb7b01e7d0bea4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/twig/5c/88/354c1f3b32a0055f6f466180b42ccef5b2385b0c36779c80e62181d55c12.php" afterPath="$PROJECT_DIR$/app/storage/twig/5c/88/354c1f3b32a0055f6f466180b42ccef5b2385b0c36779c80e62181d55c12.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/30/73/404.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/30/73/404.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/42/80/4280660a41eb5a63b096fb7f3ed0c5b7" afterPath="$PROJECT_DIR$/app/storage/cache/42/80/4280660a41eb5a63b096fb7f3ed0c5b7" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/43/19/4319f6d8c8a23d3b5901eee87e003e67" afterPath="$PROJECT_DIR$/app/storage/cache/43/19/4319f6d8c8a23d3b5901eee87e003e67" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/47/03/470330a89a0b480aca1ece1e4539f1ad" afterPath="$PROJECT_DIR$/app/storage/cache/47/03/470330a89a0b480aca1ece1e4539f1ad" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/50/35/5035b0c1e1f82379067d38f8383c7b5d" afterPath="$PROJECT_DIR$/app/storage/cache/50/35/5035b0c1e1f82379067d38f8383c7b5d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/5c/2a/5c2a72dbcde11dd8c5281ca9ab4490b8" afterPath="$PROJECT_DIR$/app/storage/cache/5c/2a/5c2a72dbcde11dd8c5281ca9ab4490b8" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/60/92/6092f12922a2e92b9326eda3034141f9" afterPath="$PROJECT_DIR$/app/storage/cache/60/92/6092f12922a2e92b9326eda3034141f9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/6b/ca/6bcabf2405c4ae1929b16ca6333d1f04" afterPath="$PROJECT_DIR$/app/storage/cache/6b/ca/6bcabf2405c4ae1929b16ca6333d1f04" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/6c/1c/6c1cb3cfd54e36fc8d13a3486201c3db" afterPath="$PROJECT_DIR$/app/storage/cache/6c/1c/6c1cb3cfd54e36fc8d13a3486201c3db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/7f/d0/7fd09c6888fe98f06d41b6ff88b31faf" afterPath="$PROJECT_DIR$/app/storage/cache/7f/d0/7fd09c6888fe98f06d41b6ff88b31faf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/94/7b/947b09b9dc9ac95d502d7025b118ecc0" afterPath="$PROJECT_DIR$/app/storage/cache/94/7b/947b09b9dc9ac95d502d7025b118ecc0" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/95/7a/957aeba50e7f8d230098d993d43751e1" afterPath="$PROJECT_DIR$/app/storage/cache/95/7a/957aeba50e7f8d230098d993d43751e1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/twig/71/e0/980da9008586e864e06f12ae759dcd50f2e5bac68790da93c8a63386806f.php" afterPath="$PROJECT_DIR$/app/storage/twig/71/e0/980da9008586e864e06f12ae759dcd50f2e5bac68790da93c8a63386806f.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/9e/1f/9e1fef4d8756058d76879b37ab2afedd" afterPath="$PROJECT_DIR$/app/storage/cache/9e/1f/9e1fef4d8756058d76879b37ab2afedd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Question.php" afterPath="$PROJECT_DIR$/app/models/Question.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/twig/bd/ac/a1b7c303d34511e88753d5d192ab48d78d19d3d33a0c214df65a0d81d77a.php" afterPath="$PROJECT_DIR$/app/storage/twig/bd/ac/a1b7c303d34511e88753d5d192ab48d78d19d3d33a0c214df65a0d81d77a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/twig/6c/ca/a343a5539f23fb23fde7595fa8010c12efa78c108414b16e346fba9d3222.php" afterPath="$PROJECT_DIR$/app/storage/twig/6c/ca/a343a5539f23fb23fde7595fa8010c12efa78c108414b16e346fba9d3222.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/a3/a9/a3a9eda6585943e3b5ab7bfff37b5d1a" afterPath="$PROJECT_DIR$/app/storage/cache/a3/a9/a3a9eda6585943e3b5ab7bfff37b5d1a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/ba/79/ba7940a3556edca0384b91681c2035cd" afterPath="$PROJECT_DIR$/app/storage/cache/ba/79/ba7940a3556edca0384b91681c2035cd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/be/fb/befbbbdfdec71a56f42af65e8db95d8b" afterPath="$PROJECT_DIR$/app/storage/cache/be/fb/befbbbdfdec71a56f42af65e8db95d8b" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/c8/27/c82787e3b8c78016fb557a9c36961e45" afterPath="$PROJECT_DIR$/app/storage/cache/c8/27/c82787e3b8c78016fb557a9c36961e45" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/c8/99/c899b22efb74c2db3b618f9e4f657bb6" afterPath="$PROJECT_DIR$/app/storage/cache/c8/99/c899b22efb74c2db3b618f9e4f657bb6" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/d5/78/d5782b53c8a3f35969c032da8c770b83" afterPath="$PROJECT_DIR$/app/storage/cache/d5/78/d5782b53c8a3f35969c032da8c770b83" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/d7/82/d782f5273cddef35e6fdbc2c384f074d" afterPath="$PROJECT_DIR$/app/storage/cache/d7/82/d782f5273cddef35e6fdbc2c384f074d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/d8/18/d8185189679e7a386b5df0cc3d68405a" afterPath="$PROJECT_DIR$/app/storage/cache/d8/18/d8185189679e7a386b5df0cc3d68405a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/36/66/default.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/36/66/default.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/responsiv-flat/layouts/default.htm" afterPath="$PROJECT_DIR$/themes/responsiv-flat/layouts/default.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/e3/1b/e31b6638d88f44732868fc266e16c180" afterPath="$PROJECT_DIR$/app/storage/cache/e3/1b/e31b6638d88f44732868fc266e16c180" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/eb/d9/ebd916440ec644fcecbb825a787cd8eb" afterPath="$PROJECT_DIR$/app/storage/cache/eb/d9/ebd916440ec644fcecbb825a787cd8eb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/80/52/examing.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/80/52/examing.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/responsiv-flat/pages/examing.htm" afterPath="$PROJECT_DIR$/themes/responsiv-flat/pages/examing.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/f5/bd/f5bdcfced2a2d0178c29472783386a07" afterPath="$PROJECT_DIR$/app/storage/cache/f5/bd/f5bdcfced2a2d0178c29472783386a07" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/fa/cc/facc952d1fc92c2b3f6a25fe365cdc89" afterPath="$PROJECT_DIR$/app/storage/cache/fa/cc/facc952d1fc92c2b3f6a25fe365cdc89" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/38/85/home.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/38/85/home.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/28/43/nav.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/28/43/nav.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/42/59/question.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/42/59/question.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/responsiv-flat/partials/question.htm" afterPath="$PROJECT_DIR$/themes/responsiv-flat/partials/question.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/81/59/section.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/81/59/section.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/39/10/signin.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/39/10/signin.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/responsiv-flat/assets/css/theme.css" afterPath="$PROJECT_DIR$/themes/responsiv-flat/assets/css/theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/16/24/training.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/16/24/training.htm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/responsiv-flat/pages/training.htm" afterPath="$PROJECT_DIR$/themes/responsiv-flat/pages/training.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/cache/38/73/ui-elements.htm.php" afterPath="$PROJECT_DIR$/app/storage/cache/38/73/ui-elements.htm.php" />
+    </list>
+    <ignored path="www.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="www" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Question.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Question.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="1026">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="examing.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/responsiv-flat/pages/examing.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26519337" vertical-offset="1347" max-vertical-offset="2147">
+              <caret line="81" column="48" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/models/Question.php" />
+        <option value="$PROJECT_DIR$/themes/responsiv-flat/pages/examing.htm" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="/etc/php5/cli" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="5" />
+    <option name="width" value="1600" />
+    <option name="height" value="874" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="responsiv-flat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="responsiv-flat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="responsiv-flat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="responsiv-flat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="examing&#9;FILE&#9;file:///var/www/themes/responsiv-flat/pages/examing.htm&#10;quest&#9;null&#9;null" />
+    <property name="options.lastSelected" value="reference.webide.settings.project.settings.php" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_opened_file_path" value="/etc/php5/cli" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="4aaa10b0-9318-499b-aecf-a1aceba27e7b" server_name="safety_october">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c81bdd03-8152-4628-b555-116fbc74434d" name="Default" comment="" />
+      <created>1424200637372</created>
+      <option name="number" value="Default" />
+      <updated>1424200637372</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="5" width="1600" height="874" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/models/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="1026">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/responsiv-flat/pages/examing.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2147">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="1026">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/responsiv-flat/pages/examing.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26519337" vertical-offset="1347" max-vertical-offset="2147">
+          <caret line="81" column="48" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

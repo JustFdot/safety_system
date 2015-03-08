@@ -1,0 +1,25 @@
+1423152756s:1087:"a:2:{s:5:"mtime";i:1423151495;s:7:"content";s:1032:"<form
+    data-request="onRegister">
+    <div class="form-group">
+        <label for="registerName">Full Name</label>
+        <input name="name" type="text" class="form-control" id="registerName" placeholder="Enter your full name" value="{{name}}">
+    </div>
+
+    <div class="form-group">
+        <label for="registerEmail">Email</label>
+        <input name="email" type="email" class="form-control" id="registerEmail" placeholder="Enter your email" value="{{email}}">
+    </div>
+
+    <div class="form-group">
+        <label for="registerPassword">Company</label>
+        <input name="company" type="company" class="form-control" id="registerCompany" placeholder="Choose a company" value="{{company}}">
+    </div>
+
+    <div class="form-group">
+        <label for="registerPassword">Password</label>
+        <input name="password" type="password" class="form-control" id="registerPassword" placeholder="Choose a password" value="{{password}}">
+    </div>
+
+    <button type="submit" class="btn btn-default">Register</button>
+</form>
+";}";

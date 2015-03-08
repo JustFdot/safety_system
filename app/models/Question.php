@@ -26,6 +26,7 @@ class Question extends Model{
         $query = DB::table('questions')->select('id', 'group', 'item', 'text')->where(array('id' => $id, 'category' => $category_id))->first();
 
         $result[$query->id] = (array) $query;
+//        $result[$query->id]['text'] = str_replace('\n', '<br />', $result[$query->id]['text']);
 
         $query = DB::table('answers')->select('id', 'question_id', 'item', 'text')->where('question_id', $id)->get();
 
